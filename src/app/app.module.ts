@@ -10,6 +10,7 @@ import { NotFoundComponent } from 'src/app/routes/notfound.component';
 import { AnimboxComponent } from './animbox.component';
 
 import { AppComponent } from './app.component';
+import { FadeBlockComponent } from './fadeblock.component';
 import { MouseComponent } from './mouse.component';
 
 const animationRoutes: Routes = [
@@ -49,7 +50,8 @@ const animationRoutes: Routes = [
     AdvancedComponent,
     NotFoundComponent,
     AnimboxComponent,
-    MouseComponent
+    MouseComponent,
+    FadeBlockComponent
   ],
   imports: [
     BrowserModule,
