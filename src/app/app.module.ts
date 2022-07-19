@@ -10,6 +10,7 @@ import { NotFoundComponent } from 'src/app/routes/notfound.component';
 import { AnimboxComponent } from './animbox.component';
 
 import { AppComponent } from './app.component';
+import { MouseComponent } from './mouse.component';
 
 const animationRoutes: Routes = [
   {
@@ -47,7 +48,8 @@ const animationRoutes: Routes = [
     ContainedComponent,
     AdvancedComponent,
     NotFoundComponent,
-    AnimboxComponent
+    AnimboxComponent,
+    MouseComponent
   ],
   imports: [
     BrowserModule,
