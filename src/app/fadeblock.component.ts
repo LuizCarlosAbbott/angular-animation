@@ -9,25 +9,25 @@ import { fadeAnimation } from './animations';
         <div class="fadeBlock mx-auto" [@changeState]="currentState"></div>
     `,
     styles: [
-            `
-            .fadeBlock {
-                background-color: #ec971f;
-                width: 600px;
-                height: 300px;
-                border-radius: 4px;
-                margin: 5rem;
-                opacity: 1;
-            }
+        `
+        .fadeBlock {
+            background-color: #ec971f;
+            width: 600px;
+            height: 300px;
+            border-radius: 4px;
+            margin: 5rem;
+            opacity: 0;
+        }
         `
     ],
     animations: [
       trigger('changeState', [
-          transition('void => *', [
+          transition('* => *', [
               useAnimation(fadeAnimation, {
                   params: {
                       delay: '300ms',
-                      from: 0,
-                      to: 1,
+                      from: 1,
+                      to: 0,
                       time: '2s'
                   }
               })
